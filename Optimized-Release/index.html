@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<title>Team C</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel=stylesheet href=https://www.w3schools.com/lib/w3.css>
+<link rel="shortcut icon" type=image/png href=img/favicon.png>
+<link rel=stylesheet href=project.css>
+</head>
+<body>
+<div class=w3-top>
+<div class="w3-bar w3-black">
+<span class="branding w3-bar-item w3-mobile">Rapid Application Development - TEAM C</span>
+<span class="w3-right w3-mobile">
+<button onclick="document.getElementById('start-modal').style.display='block'" class="w3-bar-item w3-button w3-mobile w3-hover-amber">LOGIN</button>
+</span>
+</div>
+</div>
+<section class=showcase>
+<div class="w3-container w3-center">
+<br>
+<br>
+<h1 class="w3-text-shadow w3-animate-opacity">Movie Database</h1>
+<hr>
+<br>
+<h2 class=w3-animate-opacity>EXPLORE MORE 🎬 DOWN BELOW</h2>
+<br>
+<br>
+</div>
+</section>
+<section class=section>
+<div class=w3-container>
+<div class=w3-card-4>
+<div class="w3-container w3-blue-grey">
+<h2>MOVIE DATABASE</h2>
+</div>
+<form action=SearchDatabase.php method=post class="w3-container w3-padding-xlarge">
+<label>Title</label>
+<input class=w3-input type=text name=title id=title>
+<label>Genre</label>
+<input class=w3-input type=text name=genre id=genre>
+<label>Rating</label>
+<input class=w3-input type=text name=rating id=rating>
+<label>Year</label>
+<input class=w3-input type=number name=year id=year>
+<br>
+<button type=submit class=w3-button>Search</button>
+<br></br>
+</form>
+</div>
+</div>
+</section>
+<section class="section w3-amber">
+<div class="w3-container w3-center">
+<i class="fa fa-home"></i>
+<div>
+<button class="btn btn1 w3-hover-opacity" onclick="window.location.href='members.html'">Members Page (Sign up for newsletter)</button>
+<form action=ShowTopTen.php>
+<button class="btn btn1 w3-hover-opacity">Top 10 Searches</button>
+</form>
+<form action=ShowTopTenGraph.php>
+<button class="btn btn1 w3-hover-opacity">Display Graph</button>
+</form>
+<form action=ShowTopTenRatings.php>
+<button class="btn btn1 w3-hover-opacity">Pie Chart</button>
+</form>
+</div>
+</section>
+<footer class="w3-black w3-padding-xlarge w3-center">
+<p>Team C - Movie Database &copy; 2019</p>
+</footer>
+<div id=start-modal class=w3-modal>
+<div class=w3-modal-content>
+<header class="w3-container w3-amber">
+<span onclick="document.getElementById('start-modal').style.display='none'" class=w3-closebtn>&times;</span>
+<h2>Admin Login</h2>
+</header>
+<div class=w3-container>
+<form action=admin.php method=post>
+<div class=w3-section>
+<label>Username</label>
+<input class="w3-input w3-border w3-margin-bottom" type=text name=username placeholder="Enter Username">
+<label>Password</label>
+<input class="w3-input w3-border w3-margin-bottom" type=password name=password placeholder="Enter Password">
+<button class="w3-black w3-btn-block w3-section w3-padding">Login</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>function accmyFunction(b){var a=document.getElementById(b);if(a.className.indexOf("w3-show")==-1){a.className+=" w3-show"}else{a.className=a.className.replace(" w3-show","")}};</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+<!-- Team C - Copyright Held by ACME Entertainment Pty Ltd --->
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<style>
+  @media only screen and (max-width:620px) {
+
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+      width: 100%;
+    }
+  }
+</style>
+
+<head>
+  <title>Members Page</title>
+  <link rel="stylesheet" type="text/css" href="project.css">
+</head>
+
+<body>
+  <center>
+    <h1>Members Page</h1>
+  </center>
+
+  <!--Sign Up-->
+  <section class="section ">
+    <div class="w3-container">
+      <div class="w3-card-4">
+        <div class="w3-container w3-amber">
+          <h2> Sign Up</h2>
+        </div>
+        <form action="SignUpUser.php" method="post" class="w3-container w3-padding-xlarge">
+          <label>First Name</label>
+          <input class="w3-input" type="text" name="firstname" id="firstname">
+          <label>Last Name</label>
+          <input class="w3-input" type="text" name="lastname" id="lastname">
+          <label>Email</label>
+          <input class="w3-input" type="email" name="email" id="email">
+          <br>
+          <center>
+            <input type="checkbox" name="emails" value="emails" title="Choose if you want email updates or not"> I wish to recieve email updates<br>
+            <input type="checkbox" name="notifications" value="notifications" title="Choose if you want notification updates or not"> I wish to recieve notification updates<br>
+          </center>
+          <button type="submit" class="w3-button" title="Confirm your details and sign up for the newsletter!">Sign Up</button>
+          <br></br>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--Sign Up-->
+  <section class="section ">
+    <div class="w3-container">
+      <div class="w3-card-4">
+        <div class="w3-container w3-red">
+          <h2> Request Removal</h2>
+        </div>
+        <form action="RequestRemoval.php" method="post" class="w3-container w3-padding-xlarge">
+          <label>First Name</label>
+          <input class="w3-input" type="text" name="firstname" id="firstname">
+          <label>Last Name</label>
+          <input class="w3-input" type="text" name="lastname" id="lastname">
+          <label>Email</label>
+          <input class="w3-input" type="email" name="email" id="email">
+          <br>
+          <button type="submit" class="w3-button" title="Sends a request to the admin to remove your account from further notifications">Request Removal</button>
+          <br></br>
+        </form>
+      </div>
+    </div>
+  </section>
+  <br>
+  <center>
+    <button class="btn btn3" onclick="window.location.href = 'index.html';" title="Go back to the index (home) page">Home Page</button>
+  </center>
+</body>
+
+</html>
